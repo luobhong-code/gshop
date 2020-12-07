@@ -2,17 +2,20 @@
   <header class="header">
     <slot name="left"></slot>
     <span class="header_title">
-      <span class="header_title_text ellipsis">{{ title }}</span>
+      <span class="header_title_text ellipsis">{{title}}</span>
     </span>
     <slot name="right"></slot>
   </header>
 </template>
 
 <script>
+    import {mapActions, mapState} from 'vuex'
     export default {
         props: {
             title: String,
         },
+
+        
     };
 </script>
 
